@@ -6,7 +6,7 @@ After=multi-user.target
 Type=simple
 User=admin
 WorkingDirectory=/opt/csgo_autoupdater
-ExecStart=/opt/csgo_autoupdater/run.py
+ExecStart=/home/admin/.local/share/virtualenvs/csgo_autoupdater-I4AWUcmO/bin/python /opt/csgo_autoupdater/run.py
 Restart=always
 StandardInput=tty-force
 
