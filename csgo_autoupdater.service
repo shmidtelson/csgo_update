@@ -1,0 +1,14 @@
+[Unit]
+Description=CSGO UPDATER
+After=multi-user.target
+
+[Service]
+Type=simple
+User=admin
+WorkingDirectory=/opt/csgo_autoupdater
+ExecStart=/opt/csgo_autoupdater/run.py
+Restart=always
+StandardInput=tty-force
+
+[Install]
+WantedBy=default.target
