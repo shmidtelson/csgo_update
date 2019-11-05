@@ -16,7 +16,7 @@ class MainLoop:
                 if not cn.compare():
                     cn.update_file()
                     SendCommands()
-                raise Exception('TEst')
+                    logging.info('Updated servers')
             except Exception as e:
-                logging.info(f'Error {e}')
+                logging.error(f'Error {e}')
             time.sleep(60)

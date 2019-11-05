@@ -11,12 +11,8 @@ class SendCommands:
     def main(self):
         for item in SERVER_LIST:
             private_key = paramiko.RSAKey.from_private_key_file(Key().get(item['server_name']))
-
             connection = self.open_ssh_connection(item['user'], item['ip'], port=int(item['port']), key=private_key)
-
-            stdin, stdout, stderr = connection.exec_command('cd / && ls -la')
-            for line in stdout:
-                print('... ' + line.strip('\n'))
+            connection.exec_command(item['commands'])
             connection.close()
 
     def open_ssh_connection(self, username, hostname, port=22, key=None):
