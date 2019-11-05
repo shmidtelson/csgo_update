@@ -4,7 +4,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=admin
 WorkingDirectory=/opt/csgo_autoupdater
 ExecStart=/home/admin/.local/share/virtualenvs/csgo_autoupdater-I4AWUcmO/bin/python /opt/csgo_autoupdater/run.py
 Restart=always
