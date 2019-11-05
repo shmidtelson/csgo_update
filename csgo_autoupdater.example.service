@@ -8,7 +8,6 @@ User=admin
 WorkingDirectory=/opt/csgo_autoupdater
 ExecStart=/home/admin/.local/share/virtualenvs/csgo_autoupdater-I4AWUcmO/bin/python /opt/csgo_autoupdater/run.py
 Restart=always
-StandardInput=tty-force
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
