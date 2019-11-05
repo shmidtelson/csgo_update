@@ -12,7 +12,7 @@ class SendCommands:
         for item in SERVER_LIST:
             private_key = paramiko.RSAKey.from_private_key_file(Key().get(item['server_name']))
             connection = self.open_ssh_connection(item['user'], item['ip'], port=int(item['port']), key=private_key)
-            connection.exec_command(item['commands'])
+            connection.exec_command(item['command'])
             connection.close()
 
     def open_ssh_connection(self, username, hostname, port=22, key=None):
