@@ -1,2 +1,4 @@
 .idea
-keys/*
+Pipfile.lock
+__pycache__
+*.pyc
