@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 paramiko = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"
