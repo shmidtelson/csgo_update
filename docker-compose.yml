@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  csgo_app:
+    container_name: csgo_app
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+    volumes:
+      - ./app:/app
+    ports:
+      - "443:443"

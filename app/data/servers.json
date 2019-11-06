@@ -1,0 +1,23 @@
+[
+    {
+        "key_name": "retake1_ssh.key",
+        "ip": "212.109.193.210",
+        "port": "22556",
+        "user": "root",
+        "command": "cd /opt/retake1 && docker-compose -f updater.yml up"
+    },
+    {
+        "key_name": "retake2_ssh.key",
+        "ip": "94.250.255.217",
+        "port": "22556",
+        "user": "root",
+        "command": "cd /opt/retake2 && docker-compose -f updater.yml up"
+    },
+    {
+        "key_name": "retake3_ssh.key",
+        "ip": "185.209.29.144",
+        "port": "22556",
+        "user": "root",
+        "command": "cd /opt/retake3 && docker-compose -f updater.yml up"
+    }
+]
