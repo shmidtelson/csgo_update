@@ -1,3 +1,4 @@
 *
 !.gitignore
 !latest_commit.txt
+!servers.example.json

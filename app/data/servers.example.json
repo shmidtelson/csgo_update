@@ -1,0 +1,9 @@
+[
+    {
+        "key_name": "Key name from folder keys",
+        "ip": "127.0.0.1",
+        "port": "22",
+        "user": "root",
+        "command": "ls -la"
+    }
+]
