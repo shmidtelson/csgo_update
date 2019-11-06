@@ -8,5 +8,3 @@ services:
       dockerfile: docker/python/Dockerfile
     volumes:
       - ./app:/app
-    ports:
-      - "443:443"
